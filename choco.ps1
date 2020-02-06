@@ -46,3 +46,4 @@ choco install -y soapui
 choco install -y mysql
 choco install -y apache-httpd
 choco install -y php
+choco install -y linqpad
