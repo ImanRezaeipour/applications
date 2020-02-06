@@ -32,3 +32,7 @@ choco install -y postman
 choco install -y notepadplusplus
 choco install -y sql-server-2017
 choco install -y sql-server-management-studio
+choco install -y yarn
+choco install -y nuget.commandline
+choco install -y telnet
+choco install -y redis-64
