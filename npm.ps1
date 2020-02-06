@@ -10,3 +10,7 @@ npm install -g bootstrap
 npm install -g ngx-bootstrap
 npm install -g gulp-cli
 npm install -g electron
+npm install -g grunt
+npm install -g jtable
+npm install -g formBuilder
+npm install -g jQuery-QueryBuilder
