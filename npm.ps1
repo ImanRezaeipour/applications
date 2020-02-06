@@ -8,6 +8,7 @@ npm install -g electron
 ##### CSS Framework
 npm install -g bootstrap
 npm install -g material-components-web
+npm install -g uikit
 npm install -g semantic-ui
 
 ##### UI Framework
@@ -35,7 +36,12 @@ npm install -g grunt
 npm install -g gulp-cli
 npm install -g ts-node
 npm install -g typescript
-npm install -g less
+npm install -g sass
+npm install -g rxjs
 
 ##### HTML Template (Admin Panel)
-git clone https://github.com/ColorlibHQ/AdminLTE.git
+Start-Process https://themeforest.net/item/avenxo-responsive-angularjs-html-admin/11660185
+Start-Process https://themeforest.net/item/altair-admin-material-design-uikit-template/12190654
+Start-Process https://themeforest.net/item/metronic-responsive-admin-dashboard-template/4021469
+Start-Process https://themeforest.net/item/neon-bootstrap-admin-theme/6434477
+Start-Process https://themeforest.net/item/emerald-dragon-online-marketplace-html-multipurpose-template/19298785
