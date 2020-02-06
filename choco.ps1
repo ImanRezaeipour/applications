@@ -13,6 +13,16 @@ choco install -y libreoffice-fresh
 choco install -y anydesk
 choco install -y aimp
 choco install -y fsviewer
+choco install -y paint.net
+choco install -y winrar
+choco install -y internet-download-manager
+choco install -y rufus
+choco install -y ultraiso
+choco install -y burnawarefree
+choco install -y hwinfo
+choco install -y partitionmasterfree
+choco install -y freemake-video-converter
+choco install -y shotcut
 
 ##### DEVELOP (Cross Platform + Opern Source + CLI)
 choco install -y powershell-core
