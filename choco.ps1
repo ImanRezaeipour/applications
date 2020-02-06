@@ -36,3 +36,13 @@ choco install -y yarn
 choco install -y nuget.commandline
 choco install -y telnet
 choco install -y redis-64
+choco install -y rabbitmq
+choco install -y filezilla
+choco install -y azure-data-studio
+choco install -y sqltoolbelt
+choco install -y dotpeek
+choco install -y dbforge-sql
+choco install -y soapui
+choco install -y mysql
+choco install -y apache-httpd
+choco install -y php
