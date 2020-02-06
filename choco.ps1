@@ -1,4 +1,8 @@
-##### PUBLIC #####
+
+##### Install Chocolately (By PowerShell Admin)
+Set-ExecutionPolicy Bypass -Scope Process -Force; iwr https://chocolatey.org/install.ps1 -UseBasicParsing | iex
+
+##### PUBLIC (Cross Platform)
 choco install -y foxitreader
 choco install -y directx
 choco install -y kis
@@ -6,8 +10,11 @@ choco install -y googlechrome
 choco install -y office2019-homeandstudent
 choco install -y potplayer
 choco install -y libreoffice-fresh
+choco install -y anydesk
+choco install -y aimp
+choco install -y fsviewer
 
-##### DEVELOP (CLI + Cross Platform + Opern Source)
+##### DEVELOP (Cross Platform + Opern Source + CLI)
 choco install -y powershell-core
 choco install -y openssh
 choco install -y vscode
