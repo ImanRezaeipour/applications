@@ -35,6 +35,7 @@ npm install -g grunt
 npm install -g gulp-cli
 npm install -g ts-node
 npm install -g typescript
+npm install -g less
 
 ##### HTML Template (Admin Panel)
-https://themeforest.net/item/metronic-responsive-admin-dashboard-template/4021469
+git clone https://github.com/ColorlibHQ/AdminLTE.git
