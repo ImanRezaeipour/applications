@@ -1,5 +1,5 @@
 ##### PUBLIC #####
-choco install foxitreader
+choco install -y foxitreader
 choco install -y kis
 
 ##### DEVELOP #####
