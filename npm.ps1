@@ -23,7 +23,14 @@ npm install -g select2
 npm install -g jtable
 npm install -g formBuilder
 npm install -g jQuery-QueryBuilder
+npm install -g jstree
+npm install -g slick-carousel
+npm install -g tooltipster
+npm install -g datatables
+npm install -g leaflet
 npm install -g font-awesome
+npm install -g chart.js
+npm install -g owl.carousel2
 
 ##### JS Library
 npm install -g webpack
@@ -38,6 +45,7 @@ npm install -g ts-node
 npm install -g typescript
 npm install -g sass
 npm install -g rxjs
+npm install -g firebase
 
 ##### HTML Template (Admin Panel)
 Start-Process https://themeforest.net/item/avenxo-responsive-angularjs-html-admin/11660185
