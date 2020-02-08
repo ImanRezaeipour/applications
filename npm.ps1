@@ -1,5 +1,20 @@
 ##### JS Packages (Cross Platform, Open Source, CLI)
 
+##### JS Library
+npm install -g webpack
+npm install -g parsleyjs
+npm install -g moment
+npm install -g lodash
+npm install -g underscore
+npm install -g jquery-validation
+npm install -g grunt
+npm install -g gulp-cli
+npm install -g ts-node
+npm install -g typescript
+npm install -g sass
+npm install -g rxjs
+npm install -g firebase
+
 ##### JS Framework
 npm install -g jquery
 npm install -g @angular/cli
@@ -31,21 +46,6 @@ npm install -g leaflet
 npm install -g font-awesome
 npm install -g chart.js
 npm install -g owl.carousel2
-
-##### JS Library
-npm install -g webpack
-npm install -g parsleyjs
-npm install -g moment
-npm install -g lodash
-npm install -g underscore
-npm install -g jquery-validation
-npm install -g grunt
-npm install -g gulp-cli
-npm install -g ts-node
-npm install -g typescript
-npm install -g sass
-npm install -g rxjs
-npm install -g firebase
 
 ##### HTML Template (Admin Panel)
 Start-Process https://themeforest.net/item/avenxo-responsive-angularjs-html-admin/11660185
