@@ -64,3 +64,4 @@ choco install -y apache-httpd
 choco install -y php
 choco install -y linqpad
 choco install -y mariadb
+choco install -y composer
