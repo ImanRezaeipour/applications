@@ -14,11 +14,17 @@ npm install -g typescript
 npm install -g sass
 npm install -g rxjs
 npm install -g firebase
+npm install -g requirejs
+npm install -g socket.io
+npm install -g eslint
 
 ##### JS Framework
 npm install -g jquery
 npm install -g @angular/cli
+npm install -g express
 npm install -g electron
+npm install -g cordova
+npm install -g hexo
 
 ##### CSS Framework
 npm install -g bootstrap
