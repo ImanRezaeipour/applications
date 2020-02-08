@@ -30,13 +30,22 @@ Install-Package Swashbuckle
 Install-Package EPPlus
 Install-Package MailKit
 Install-Package HangFire
-
-##### Library (Need Service)
+Install-Package EntityFramework.DynamicFilters
+Install-Package HtmlAgilityPack
+Install-Package Z.EntityFramework.Plus.EFCore
+Install-Package Z.EntityFramework.Plus.EF6.Effort
+Install-Package NMemory
 Install-Package Microsoft.EntityFrameworkCore
 Install-Package Microsoft.AspNet.OData
 Install-Package StackExchange.Redis
 Install-Package MongoDB.Driver
 Install-Package RabbitMQ.Client
+Install-Package Dapper
+Install-Package Z.ExtensionMethods
+Install-Package Z.Expressions.Eval
+Install-Package Z.BulkOperations
+Install-Package log4net
+Install-Package Serilog
 
 ##### Framework (Open Source, CLI)
 git clone https://github.com/aspnetboilerplate/aspnetboilerplate.git
