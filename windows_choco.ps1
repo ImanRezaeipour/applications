@@ -1,3 +1,9 @@
+##### Remove Windows Store Packages
+Get-AppxPackage
+Get-AppxPackage | Select Name , PackageFullName
+Get-AppxPackage -AllUsers | Remove-AppxPackage
+Get-AppXProvisionedPackage -online | Remove-AppxProvisionedPackage -online
+Get-AppXPackage *WindowsStore* -AllUsers | Foreach {Add-AppxPackage -DisableDevelopmentMode -Register "$($_.InstallLocation)\AppXManifest.xml"}
 
 ##### Install Chocolately (By PowerShell Admin)
 Set-ExecutionPolicy Bypass -Scope Process -Force; iwr https://chocolatey.org/install.ps1 -UseBasicParsing | iex
