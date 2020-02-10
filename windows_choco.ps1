@@ -8,7 +8,7 @@ Get-AppXPackage *WindowsStore* -AllUsers | Foreach {Add-AppxPackage -DisableDeve
 ##### Install Chocolately (By PowerShell Admin)
 Set-ExecutionPolicy Bypass -Scope Process -Force; iwr https://chocolatey.org/install.ps1 -UseBasicParsing | iex
 
-##### Scripts (Alias)
+##### Scripts (Path Alias)
 [Environment]::SetEnvironmentVariable('PATH', ([Environment]::GetEnvironmentVariable('PATH', 'Machine') + ';' + 'C:\Program Files (x86)\JetBrains\JetBrains Rider 2019.3.1\bin'), 'Machine')
 
 ##### Extensions
@@ -16,9 +16,7 @@ Set-ExecutionPolicy Bypass -Scope Process -Force; iwr https://chocolatey.org/ins
 
 ##### PUBLIC (Cross Platform)
 choco install -y kis
-choco install -y foxitreader
 choco install -y googlechrome
-choco install -y office2019-homeandstudent
 choco install -y potplayer
 choco install -y libreoffice-fresh
 choco install -y anydesk
@@ -34,6 +32,8 @@ choco install -y hwinfo
 choco install -y partitionmasterfree
 choco install -y freemake-video-converter
 choco install -y shotcut
+choco install -y office2019-homeandstudent
+choco install -y foxitreader
 
 ##### DEVELOP (Cross Platform + Opern Source + CLI)
 choco install -y vscode
