@@ -29,7 +29,6 @@ choco install -y paint.net
 choco install -y winrar
 choco install -y internet-download-manager
 choco install -y rufus
-choco install -y ultraiso
 choco install -y burnawarefree
 choco install -y hwinfo
 choco install -y partitionmasterfree
@@ -37,6 +36,7 @@ choco install -y freemake-video-converter
 choco install -y shotcut
 choco install -y office2019-homeandstudent
 choco install -y foxitreader
+choco install -y ultraiso
 
 ##### DEVELOP (Cross Platform + Opern Source + CLI)
 choco install -y vscode
@@ -54,23 +54,22 @@ choco install -y openssh
 choco install -y telnet
 choco install -y fiddler
 choco install -y postman
+choco install -y soapui
 choco install -y notepadplusplus
+choco install -y dotpeek
+choco install -y php
 choco install -y docker-desktop
 choco install -y mongodb
 choco install -y nginx
-choco install -y python
 choco install -y datagrip
 choco install -y redis-64
 choco install -y rabbitmq
 choco install -y filezilla
 choco install -y azure-data-studio
 choco install -y sqltoolbelt
-choco install -y dotpeek
 choco install -y dbforge-sql
-choco install -y soapui
 choco install -y mysql
 choco install -y apache-httpd
-choco install -y php
 choco install -y linqpad
 choco install -y mariadb
 choco install -y composer
