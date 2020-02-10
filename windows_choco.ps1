@@ -1,6 +1,4 @@
 ##### Remove Windows Store Packages
-Get-AppxPackage
-Get-AppxPackage | Select Name , PackageFullName
 Get-AppxPackage -AllUsers | Remove-AppxPackage
 Get-AppXProvisionedPackage -online | Remove-AppxProvisionedPackage -online
 Get-AppXPackage *WindowsStore* -AllUsers | Foreach {Add-AppxPackage -DisableDevelopmentMode -Register "$($_.InstallLocation)\AppXManifest.xml"}
@@ -12,7 +10,12 @@ Set-ExecutionPolicy Bypass -Scope Process -Force; iwr https://chocolatey.org/ins
 [Environment]::SetEnvironmentVariable('PATH', ([Environment]::GetEnvironmentVariable('PATH', 'Machine') + ';' + 'C:\Program Files (x86)\JetBrains\JetBrains Rider 2019.3.1\bin'), 'Machine')
 
 ##### Extensions
-
+code --install-extension msjsdiag.debugger-for-chrome
+code --install-extension vscode-icons-team.vscode-icons
+code --install-extension esbenp.prettier-vscode
+code --install-extension ms-vscode.csharp
+code --install-extension ms-azuretools.vscode-docker
+code --install-extension ms-vscode.powershell
 
 ##### PUBLIC (Cross Platform)
 choco install -y kis
@@ -48,15 +51,15 @@ choco install -y jetbrains-rider
 choco install -y sql-server-2017
 choco install -y sql-server-management-studio
 choco install -y openssh
+choco install -y telnet
+choco install -y fiddler
+choco install -y postman
+choco install -y notepadplusplus
 choco install -y docker-desktop
 choco install -y mongodb
 choco install -y nginx
 choco install -y python
-choco install -y fiddler
 choco install -y datagrip
-choco install -y postman
-choco install -y notepadplusplus
-choco install -y telnet
 choco install -y redis-64
 choco install -y rabbitmq
 choco install -y filezilla
