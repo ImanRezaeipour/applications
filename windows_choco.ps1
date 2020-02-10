@@ -11,6 +11,9 @@ Set-ExecutionPolicy Bypass -Scope Process -Force; iwr https://chocolatey.org/ins
 ##### Scripts (Alias)
 [Environment]::SetEnvironmentVariable('PATH', ([Environment]::GetEnvironmentVariable('PATH', 'Machine') + ';' + 'C:\Program Files (x86)\JetBrains\JetBrains Rider 2019.3.1\bin'), 'Machine')
 
+##### Extensions
+
+
 ##### PUBLIC (Cross Platform)
 choco install -y kis
 choco install -y foxitreader
@@ -38,8 +41,12 @@ choco install -y git
 choco install -y nodejs
 choco install -y yarn
 choco install -y dotnetcore-sdk
+choco install -y dotnetcore-sdk -version 2.2.0 --force
+choco install -y nuget.commandline
 choco install -y powershell-core
 choco install -y jetbrains-rider
+choco install -y sql-server-2017
+choco install -y sql-server-management-studio
 choco install -y openssh
 choco install -y docker-desktop
 choco install -y mongodb
@@ -49,9 +56,6 @@ choco install -y fiddler
 choco install -y datagrip
 choco install -y postman
 choco install -y notepadplusplus
-choco install -y sql-server-2017
-choco install -y sql-server-management-studio
-choco install -y nuget.commandline
 choco install -y telnet
 choco install -y redis-64
 choco install -y rabbitmq
