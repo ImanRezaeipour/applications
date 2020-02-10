@@ -9,7 +9,7 @@ Get-AppXPackage *WindowsStore* -AllUsers | Foreach {Add-AppxPackage -DisableDeve
 Set-ExecutionPolicy Bypass -Scope Process -Force; iwr https://chocolatey.org/install.ps1 -UseBasicParsing | iex
 
 ##### Scripts (Alias)
-
+[Environment]::SetEnvironmentVariable('PATH', ([Environment]::GetEnvironmentVariable('PATH', 'Machine') + ';' + 'C:\Program Files (x86)\JetBrains\JetBrains Rider 2019.3.1\bin'), 'Machine')
 
 ##### PUBLIC (Cross Platform)
 choco install -y kis
