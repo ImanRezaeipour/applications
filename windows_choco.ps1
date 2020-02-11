@@ -39,17 +39,27 @@ choco install -y foxitreader
 choco install -y ultraiso
 
 ##### DEVELOP (Cross Platform + Opern Source + CLI)
-choco install -y vscode
-choco install -y git
-choco install -y nodejs
-choco install -y yarn
 choco install -y dotnetcore-sdk
 choco install -y dotnetcore-sdk -version 2.2.0 --force
 choco install -y nuget.commandline
-choco install -y powershell-core
-choco install -y jetbrains-rider
 choco install -y sql-server-2017
+choco install -y jetbrains-rider
 choco install -y sql-server-management-studio
+choco install -y azure-data-studio
+
+choco install -y nodejs
+choco install -y yarn
+choco install -y mongodb
+choco install -y vscode
+choco install -y datagrip
+
+choco install -y php
+choco install -y composer
+choco install -y mysql
+
+choco install -y docker-desktop
+choco install -y powershell-core
+choco install -y git
 choco install -y openssh
 choco install -y telnet
 choco install -y fiddler
@@ -57,19 +67,8 @@ choco install -y postman
 choco install -y soapui
 choco install -y notepadplusplus
 choco install -y dotpeek
-choco install -y php
-choco install -y docker-desktop
-choco install -y mongodb
 choco install -y nginx
-choco install -y datagrip
 choco install -y redis-64
 choco install -y rabbitmq
 choco install -y filezilla
-choco install -y azure-data-studio
-choco install -y sqltoolbelt
-choco install -y dbforge-sql
-choco install -y mysql
-choco install -y apache-httpd
 choco install -y linqpad
-choco install -y mariadb
-choco install -y composer
