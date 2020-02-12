@@ -46,14 +46,17 @@ choco install -y sql-server-2017
 choco install -y jetbrains-rider
 choco install -y sql-server-management-studio
 choco install -y azure-data-studio
+
 choco install -y nodejs
 choco install -y yarn
 choco install -y mongodb
 choco install -y vscode
 choco install -y datagrip
+
 choco install -y php
 choco install -y composer
 choco install -y mysql
+
 choco install -y docker-desktop
 choco install -y powershell-core
 choco install -y git
