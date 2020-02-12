@@ -32,15 +32,22 @@ npm install -g bootstrap
 npm install -g material-components-web
 npm install -g uikit
 npm install -g semantic-ui
+npm install -g bulma
 
-##### UI Framework
+##### UI Font
+npm install -g font-awesome
+npm install -g material-design-icons
+
+##### UI Component
 npm install -g jquery-ui
 npm install -g @angular/material
 npm install -g ngx-bootstrap
 npm install -g primeng
 npm install -g @progress/kendo-ui
+npm install -g devextreme
 
 ##### UI Widget
+npm install -g d3
 npm install -g select2
 npm install -g jtable
 npm install -g formBuilder
@@ -50,9 +57,21 @@ npm install -g slick-carousel
 npm install -g tooltipster
 npm install -g datatables
 npm install -g leaflet
-npm install -g font-awesome
 npm install -g chart.js
 npm install -g owl.carousel2
+npm install -g masonry-layout
+npm install -g animate.css
+npm install -g aos
+npm install -g morris
+npm install -g tinymce
+npm install -g @ckeditor
+npm install -g jqgrid
+npm install -g toastr
+npm install -g ol
+npm install -g raphael
+npm install -g daterangepicker
+npm install -g mixitup
+npm install -g sweetalert2
 
 ##### HTML Template (Admin Panel)
 Start-Process https://themeforest.net/item/avenxo-responsive-angularjs-html-admin/11660185
