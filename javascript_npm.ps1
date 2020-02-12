@@ -23,6 +23,7 @@ npm install -g jquery
 npm install -g @angular/cli
 npm install -g express
 npm install -g electron
+npm install -g @ionic/cli
 npm install -g cordova
 npm install -g hexo
 
