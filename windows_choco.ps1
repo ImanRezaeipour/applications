@@ -7,7 +7,8 @@ Get-AppXPackage *WindowsStore* -AllUsers | Foreach {Add-AppxPackage -DisableDeve
 Set-ExecutionPolicy Bypass -Scope Process -Force; iwr https://chocolatey.org/install.ps1 -UseBasicParsing | iex
 
 ##### Scripts (Path Alias)
-[Environment]::SetEnvironmentVariable('PATH', ([Environment]::GetEnvironmentVariable('PATH', 'Machine') + ';' + 'C:\Program Files (x86)\JetBrains\JetBrains Rider 2019.3.1\bin'), 'Machine')
+$path = 'C:\Program Files (x86)\JetBrains\JetBrains Rider 2019.3.1\bin'
+[Environment]::SetEnvironmentVariable('PATH', ([Environment]::GetEnvironmentVariable('PATH', 'Machine') + ';' + $path), 'Machine')
 
 ##### Extensions
 code --install-extension msjsdiag.debugger-for-chrome
@@ -34,9 +35,8 @@ choco install -y hwinfo
 choco install -y partitionmasterfree
 choco install -y freemake-video-converter
 choco install -y shotcut
-choco install -y office2019-homeandstudent
 choco install -y foxitreader
-choco install -y ultraiso
+choco install -y terminus
 
 ##### DEVELOP (Cross Platform + Opern Source + CLI)
 choco install -y dotnetcore-sdk
@@ -46,17 +46,14 @@ choco install -y sql-server-2017
 choco install -y jetbrains-rider
 choco install -y sql-server-management-studio
 choco install -y azure-data-studio
-
 choco install -y nodejs
 choco install -y yarn
 choco install -y mongodb
 choco install -y vscode
 choco install -y datagrip
-
 choco install -y php
 choco install -y composer
 choco install -y mysql
-
 choco install -y docker-desktop
 choco install -y powershell-core
 choco install -y git
@@ -72,3 +69,7 @@ choco install -y redis-64
 choco install -y rabbitmq
 choco install -y filezilla
 choco install -y linqpad
+choco install -y winmerge
+choco install -y poedit
+choco install -y advanced-installer
+choco install -y ealite
