@@ -1,6 +1,7 @@
 ##### Remove Windows Store Packages
 Get-AppxPackage -AllUsers | Remove-AppxPackage
 Get-AppXProvisionedPackage -online | Remove-AppxProvisionedPackage -online
+Get-WindowsOptionalFeature -Online | Disable-WindowsOptionalFeature -Online -NoRestart
 Get-AppXPackage *WindowsStore* -AllUsers | Foreach {Add-AppxPackage -DisableDevelopmentMode -Register "$($_.InstallLocation)\AppXManifest.xml"}
 
 ##### Install Chocolately (By PowerShell Admin)
@@ -10,7 +11,7 @@ Set-ExecutionPolicy Bypass -Scope Process -Force; iwr https://chocolatey.org/ins
 $path = 'C:\Program Files (x86)\JetBrains\JetBrains Rider 2019.3.1\bin'
 [Environment]::SetEnvironmentVariable('PATH', ([Environment]::GetEnvironmentVariable('PATH', 'Machine') + ';' + $path), 'Machine')
 
-##### Extensions
+##### Extensions (VSCode)
 code --install-extension msjsdiag.debugger-for-chrome
 code --install-extension vscode-icons-team.vscode-icons
 code --install-extension esbenp.prettier-vscode
