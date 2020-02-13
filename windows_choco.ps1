@@ -38,6 +38,7 @@ choco install -y freemake-video-converter
 choco install -y shotcut
 choco install -y foxitreader
 choco install -y terminus
+choco install -y directoryopus
 
 ##### DEVELOP (Cross Platform + Opern Source + CLI)
 choco install -y dotnetcore-sdk
