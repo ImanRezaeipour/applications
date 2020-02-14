@@ -39,6 +39,20 @@ choco install -y shotcut
 choco install -y foxitreader
 choco install -y terminus
 choco install -y directoryopus
+choco install -y putty
+choco install -y conemu
+choco install -y cygwin
+choco install -y winscp.install
+choco install -y thunderbird
+choco install -y inkscape
+choco install -y wget
+choco install -y curl
+choco install -y gimp
+choco install -y ccleaner
+choco install -y sysinternals
+choco install -y azure-cli
+choco install -y youtube-dl
+choco install -y boxstarter
 
 ##### DEVELOP (Cross Platform + Opern Source + CLI)
 choco install -y dotnetcore-sdk
