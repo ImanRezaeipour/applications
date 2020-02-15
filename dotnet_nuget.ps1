@@ -4,6 +4,11 @@ dotnet new console
 dotnet new blazor
 dotnet new webapi
 
+##### EF CLI
+dotnet tool install --global dotnet-ef
+dotnet ef migrations add
+dotnet ef database update
+
 ##### Install By Nuget CLI
 nuget install -OutputDirectory %UserProfile%\.nuget\packages Newtonsoft.Json 
 nuget install -OutputDirectory %UserProfile%\.nuget\packages Elmah
