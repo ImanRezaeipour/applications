@@ -3,6 +3,7 @@ Get-AppxPackage -AllUsers | Remove-AppxPackage
 Get-AppXProvisionedPackage -online | Remove-AppxProvisionedPackage -online
 Get-WindowsOptionalFeature -Online | Disable-WindowsOptionalFeature -Online -NoRestart
 Get-AppXPackage *WindowsStore* -AllUsers | Foreach {Add-AppxPackage -DisableDevelopmentMode -Register "$($_.InstallLocation)\AppXManifest.xml"}
+Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-NetFx4-US-OC-Package
 
 ##### Install Chocolately (By PowerShell Admin)
 Set-ExecutionPolicy Bypass -Scope Process -Force; iwr https://chocolatey.org/install.ps1 -UseBasicParsing | iex
