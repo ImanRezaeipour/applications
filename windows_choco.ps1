@@ -12,13 +12,21 @@ Set-ExecutionPolicy Bypass -Scope Process -Force; iwr https://chocolatey.org/ins
 $path = 'C:\Program Files (x86)\JetBrains\JetBrains Rider 2019.3.1\bin'
 [Environment]::SetEnvironmentVariable('PATH', ([Environment]::GetEnvironmentVariable('PATH', 'Machine') + ';' + $path), 'Machine')
 
-##### Extensions (VSCode)
+##### Microsoft Management Console (MMC)
+
+
+##### Extensions (Visual Studio Code)
 code --install-extension msjsdiag.debugger-for-chrome
 code --install-extension vscode-icons-team.vscode-icons
 code --install-extension esbenp.prettier-vscode
 code --install-extension ms-vscode.csharp
 code --install-extension ms-azuretools.vscode-docker
 code --install-extension ms-vscode.powershell
+code --install-extension dracula-theme.theme-dracula
+code --install-extension ms-mssql.mssql
+
+##### Extensions (Jetbrains Rider)
+Dracula Theme
 
 ##### PUBLIC (Cross Platform)
 choco install -y kis
@@ -30,6 +38,10 @@ choco install -y aimp
 choco install -y fsviewer
 choco install -y paint.net
 choco install -y winrar
+choco install -y conemu
+choco install -y foxitreader
+choco install -y directoryopus
+choco install -y notepadplusplus
 choco install -y internet-download-manager
 choco install -y rufus
 choco install -y burnawarefree
@@ -37,20 +49,10 @@ choco install -y hwinfo
 choco install -y partitionmasterfree
 choco install -y freemake-video-converter
 choco install -y shotcut
-choco install -y foxitreader
-choco install -y terminus
-choco install -y directoryopus
-choco install -y putty
-choco install -y conemu
 choco install -y cygwin
-choco install -y winscp.install
 choco install -y thunderbird
 choco install -y inkscape
-choco install -y wget
-choco install -y curl
-choco install -y gimp
 choco install -y ccleaner
-choco install -y sysinternals
 choco install -y azure-cli
 choco install -y youtube-dl
 choco install -y boxstarter
@@ -79,7 +81,6 @@ choco install -y telnet
 choco install -y fiddler
 choco install -y postman
 choco install -y soapui
-choco install -y notepadplusplus
 choco install -y dotpeek
 choco install -y nginx
 choco install -y redis-64
@@ -90,3 +91,8 @@ choco install -y winmerge
 choco install -y poedit
 choco install -y advanced-installer
 choco install -y ealite
+choco install -y sysinternals
+choco install -y putty
+choco install -y winscp.install
+choco install -y curl
+choco install -y wget
