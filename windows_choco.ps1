@@ -12,6 +12,13 @@ Set-ExecutionPolicy Bypass -Scope Process -Force; iwr https://chocolatey.org/ins
 $path = 'C:\Program Files (x86)\JetBrains\JetBrains Rider 2019.3.1\bin'
 [Environment]::SetEnvironmentVariable('PATH', ([Environment]::GetEnvironmentVariable('PATH', 'Machine') + ';' + $path), 'Machine')
 
+$path = "C:\Program Files\PowerShell\6\pwsh.exe"
+New-Item -Path Registry::HKCR\Directory\Background\shell\PowershellCore
+New-Item -Path Registry::HKCR\Directory\Background\shell\PowershellCore\command
+Set-ItemProperty -Path Registry::HKCR\Directory\Background\shell\PowershellCore -Name "(Default)" -Value "Powershell Core"
+New-ItemProperty -Path Registry::HKCR\Directory\Background\shell\PowershellCore -Name "Icon" -PropertyType String -Value $path
+New-ItemProperty -Path Registry::HKCR\Directory\Background\shell\PowershellCore\command -Name "(Default)" -PropertyType String -Value "$($path) -noexit -command Set-Location -literalPath '%V'"
+
 ##### Microsoft Management Console (MMC)
 
 
