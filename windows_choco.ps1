@@ -44,18 +44,9 @@ choco install -y directoryopus
 choco install -y notepadplusplus
 choco install -y internet-download-manager
 choco install -y rufus
-choco install -y burnawarefree
-choco install -y hwinfo
-choco install -y partitionmasterfree
-choco install -y freemake-video-converter
-choco install -y shotcut
-choco install -y cygwin
 choco install -y thunderbird
-choco install -y inkscape
-choco install -y ccleaner
-choco install -y azure-cli
-choco install -y youtube-dl
-choco install -y boxstarter
+choco install -y grammarly
+choco install -y chocolateygui
 
 ##### DEVELOP (Cross Platform + Opern Source + CLI)
 choco install -y dotnetcore-sdk
@@ -96,3 +87,5 @@ choco install -y putty
 choco install -y winscp.install
 choco install -y curl
 choco install -y wget
+choco install -y cygwin
+choco install -y boxstarter
