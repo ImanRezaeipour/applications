@@ -17,6 +17,7 @@ npm install -g firebase
 npm install -g requirejs
 npm install -g socket.io
 npm install -g eslint
+npm install -g modernizr
 
 ##### JS Framework
 npm install -g jquery
@@ -72,6 +73,7 @@ npm install -g raphael
 npm install -g daterangepicker
 npm install -g mixitup
 npm install -g sweetalert2
+npm install -g highcharts
 
 ##### HTML Template (Admin Panel)
 Start-Process https://themeforest.net/item/avenxo-responsive-angularjs-html-admin/11660185
