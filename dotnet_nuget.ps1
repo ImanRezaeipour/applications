@@ -51,6 +51,7 @@ Install-Package Z.Expressions.Eval
 Install-Package Z.BulkOperations
 Install-Package log4net
 Install-Package Serilog
+Install-Package JWT
 
 ##### Framework (Open Source, CLI)
 git clone https://github.com/aspnetboilerplate/aspnetboilerplate.git
