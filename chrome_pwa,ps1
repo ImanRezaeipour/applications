@@ -1,9 +1,38 @@
+##### Chrome In Windows
+Get-ChildItem "C:\Users\Iman\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Chrome Apps\*" -Recurse | Remove-Item
 
-$TargetFile = "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe"
-$ShortcutFile = "C:\Users\Iman\Desktop\Me0.lnk"
-$WScriptShell = New-Object -ComObject WScript.Shell
-$Shortcut = $WScriptShell.CreateShortcut($ShortcutFile)
-$Shortcut.Arguments = "--app=http://github.com"
-$Shortcut.TargetPath = $TargetFile
-$Shortcut.IconLocation = "https://www.reddit.com/favicon.ico"
-$Shortcut.Save()
+$sites = New-Object Collections.Generic.List[String]
+
+$sites.Add("google.com")
+$sites.Add("gist.github.com")
+$sites.Add("onebill.parsonline.com")
+$sites.Add("my.playstation.com")
+$sites.Add("my.mci.ir")
+$sites.Add("my.irancell.ir")
+$sites.Add("gitlab.com")
+$sites.Add("takhfifan.com")
+$sites.Add("gitter.im")
+$sites.Add("slack.com")
+$sites.Add("trucaller.com")
+$sites.Add("onenote.com")
+$sites.Add("outlook.live.com")
+$sites.Add("onedrive.live.com")
+$sites.Add("slideshare.net")
+$sites.Add("web.airdroid.com")
+$sites.Add("drive.google.com")
+$sites.Add("mail.google.com")
+$sites.Add("youtube.com")
+
+foreach($site in $sites)
+{
+    Write-Host $site
+    $TargetFile = "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe"
+    $ShortcutFile = "C:\Users\Iman\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Chrome Apps\$($site).lnk"
+    $WScriptShell = New-Object -ComObject WScript.Shell
+    $Shortcut = $WScriptShell.CreateShortcut($ShortcutFile)
+    $Shortcut.Arguments = "--app=http://$($site)"
+    $Shortcut.TargetPath = $TargetFile
+    Invoke-WebRequest "$($site)/favicon.ico" -OutFile "C:\Users\Iman\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Chrome Apps\$($site).ico"
+    $Shortcut.IconLocation = "C:\Users\Iman\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Chrome Apps\$($site).ico"
+    $Shortcut.Save()
+}
