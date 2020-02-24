@@ -15,9 +15,23 @@ $path = 'C:\Program Files (x86)\JetBrains\JetBrains Rider 2019.3.1\bin'
 $path = "C:\Program Files\PowerShell\6\pwsh.exe"
 New-Item -Path Registry::HKCR\Directory\Background\shell\PowershellCore
 New-Item -Path Registry::HKCR\Directory\Background\shell\PowershellCore\command
-Set-ItemProperty -Path Registry::HKCR\Directory\Background\shell\PowershellCore -Name "(Default)" -Value "Powershell Core"
+Set-ItemProperty -Path Registry::HKCR\Directory\Background\shell\PowershellCore -Name "(Default)" -Value "Powershell Core Here"
 New-ItemProperty -Path Registry::HKCR\Directory\Background\shell\PowershellCore -Name "Icon" -PropertyType String -Value $path
 New-ItemProperty -Path Registry::HKCR\Directory\Background\shell\PowershellCore\command -Name "(Default)" -PropertyType String -Value "$($path) -noexit -command Set-Location -literalPath '%V'"
+
+$path = "C:\Program Files (x86)\JetBrains\JetBrains Rider 2019.3.1\bin\rider64.exe"
+New-Item -Path Registry::HKCR\Directory\Background\shell\Rider
+New-Item -Path Registry::HKCR\Directory\Background\shell\Rider\command
+Set-ItemProperty -Path Registry::HKCR\Directory\Background\shell\Rider -Name "(Default)" -Value "Open with Rider"
+New-ItemProperty -Path Registry::HKCR\Directory\Background\shell\Rider -Name "Icon" -PropertyType String -Value $path
+New-ItemProperty -Path Registry::HKCR\Directory\Background\shell\Rider\command -Name "(Default)" -PropertyType String -Value "$($path) '%V'"
+
+$path = "C:\Program Files\ConEmu\ConEmu64.exe"
+New-Item -Path Registry::HKCR\Directory\Background\shell\ConEmu
+New-Item -Path Registry::HKCR\Directory\Background\shell\ConEmu\command
+Set-ItemProperty -Path Registry::HKCR\Directory\Background\shell\ConEmu -Name "(Default)" -Value "ConEmu Here"
+New-ItemProperty -Path Registry::HKCR\Directory\Background\shell\ConEmu -Name "Icon" -PropertyType String -Value $path
+New-ItemProperty -Path Registry::HKCR\Directory\Background\shell\ConEmu\command -Name "(Default)" -PropertyType String -Value "$($path) -here /single /cmd {powershell} -cur_console:n"
 
 ##### Microsoft Management Console (MMC)
 
