@@ -90,6 +90,8 @@ $sites.Add("mindmeister.com")
 $sites.Add("online.foxitsoftware.com/phantompdf")
 $sites.Add("photofunia.com")
 $sites.Add("ebanking.bankmellat.ir/ebanking")
+$sites.Add("portal.azure.com")
+$sites.Add("dev.azure.com")
 
 foreach($site in $sites)
 {
