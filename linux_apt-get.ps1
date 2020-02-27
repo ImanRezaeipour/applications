@@ -5,6 +5,8 @@ sudo apt install -y snapd
 ##### PUBLIC
 sudo apt-get install -y gnome-tweak-tool
 sudo apt-get install -y openconnect
+wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+sudo apt install ./google-chrome-stable_current_amd64.deb
 
 ##### DEVELOP (Cross Platform, Open Source, CLI)
 sudo snap install -y dotnet-sdk --classic
