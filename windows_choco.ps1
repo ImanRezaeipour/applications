@@ -112,3 +112,4 @@ choco install -y cygwin
 choco install -y boxstarter
 choco install -y urlrewrite
 choco install -y dotnetcore-windowshosting --version=2.2.0
+choco install -y wsl
