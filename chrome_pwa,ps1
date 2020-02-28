@@ -92,6 +92,7 @@ $sites.Add("photofunia.com")
 $sites.Add("ebanking.bankmellat.ir/ebanking")
 $sites.Add("portal.azure.com")
 $sites.Add("dev.azure.com")
+$sites.Add("store.steampowered.com")
 
 foreach($site in $sites)
 {
