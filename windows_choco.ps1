@@ -11,6 +11,10 @@ Set-ExecutionPolicy Bypass -Scope Process -Force; iwr https://chocolatey.org/ins
 ##### Scripts (Path Alias)
 $path = 'C:\Program Files (x86)\JetBrains\JetBrains Rider 2019.3.1\bin'
 [Environment]::SetEnvironmentVariable('PATH', ([Environment]::GetEnvironmentVariable('PATH', 'Machine') + ';' + $path), 'Machine')
+$path = 'C:\Program Files\MongoDB\Server\4.2\bin'
+[Environment]::SetEnvironmentVariable('PATH', ([Environment]::GetEnvironmentVariable('PATH', 'Machine') + ';' + $path), 'Machine')
+$path = 'C:\tools\nginx-1.17.8'
+[Environment]::SetEnvironmentVariable('PATH', ([Environment]::GetEnvironmentVariable('PATH', 'Machine') + ';' + $path), 'Machine')
 
 $path = "C:\Program Files\PowerShell\6\pwsh.exe"
 New-Item -Path Registry::HKCR\Directory\Background\shell\PowershellCore
@@ -46,8 +50,9 @@ code --install-extension ms-vscode.powershell
 code --install-extension dracula-theme.theme-dracula
 code --install-extension ms-mssql.mssql
 
-##### Extensions (Jetbrains Rider)
+##### Extensions (Jetbrains Rider and DataGrip)
 Dracula Theme
+Atom Material Icons
 
 ##### PUBLIC (Cross Platform)
 choco install -y kis
@@ -113,3 +118,5 @@ choco install -y boxstarter
 choco install -y urlrewrite
 choco install -y dotnetcore-windowshosting --version=2.2.0
 choco install -y wsl
+choco install -y wsl-ubuntu-1804
+choco install -y ffmpeg
