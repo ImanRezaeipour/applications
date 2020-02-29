@@ -38,17 +38,11 @@ $sites.Add("soundcloud.com")
 $sites.Add("radiojavan.com")
 $sites.Add("open.spotify.com")
 $sites.Add("twitch.tv")
-$sites.Add("mixer.com")
 $sites.Add("telewebion.com")
 $sites.Add("ted.com")
 $sites.Add("imdb.com")
-$sites.Add("moviesanywhere.com")
-$sites.Add("ankiweb.net")
 $sites.Add("memrise.com")
-$sites.Add("lastpass.com")
 $sites.Add("trello.com")
-$sites.Add("todoist.com")
-$sites.Add("wunderlist.com")
 $sites.Add("evernote.com/Home.action")
 $sites.Add("getpocket.com")
 $sites.Add("tapatalk.com")
@@ -58,8 +52,6 @@ $sites.Add("reddit.com")
 $sites.Add("wordpress.com")
 $sites.Add("app.box.com")
 $sites.Add("dropbox.com")
-$sites.Add("wallpaperstudio10.com")
-$sites.Add("vk.com")
 $sites.Add("pinterest.com")
 $sites.Add("web.telegram.org")
 $sites.Add("twitter.com")
@@ -83,27 +75,24 @@ $sites.Add("office.live.com/start/Excel.aspx")
 $sites.Add("office.live.com/start/Word.aspx")
 $sites.Add("picsart.com")
 $sites.Add("quora.com")
-$sites.Add("app.tap30.org")
 $sites.Add("web.skype.com")
-$sites.Add("wevideo.com")
-$sites.Add("mindmeister.com")
-$sites.Add("online.foxitsoftware.com/phantompdf")
 $sites.Add("photofunia.com")
 $sites.Add("ebanking.bankmellat.ir/ebanking")
 $sites.Add("portal.azure.com")
 $sites.Add("dev.azure.com")
 $sites.Add("store.steampowered.com")
+$sites.Add("instagram.com")
 
 foreach($site in $sites)
 {
     Write-Host $site
+    Invoke-WebRequest "http://$($site)/favicon.ico" -OutFile "C:\Users\Iman\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Chrome Apps\$($site).ico"
     $TargetFile = "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe"
     $ShortcutFile = "C:\Users\Iman\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Chrome Apps\$($site).lnk"
     $WScriptShell = New-Object -ComObject WScript.Shell
     $Shortcut = $WScriptShell.CreateShortcut($ShortcutFile)
     $Shortcut.Arguments = "--app=http://$($site)"
     $Shortcut.TargetPath = $TargetFile
-    Invoke-WebRequest "$($site)/favicon.ico" -OutFile "C:\Users\Iman\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Chrome Apps\$($site).ico"
     $Shortcut.IconLocation = "C:\Users\Iman\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Chrome Apps\$($site).ico"
     $Shortcut.Save()
 }
