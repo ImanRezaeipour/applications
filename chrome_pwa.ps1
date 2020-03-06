@@ -82,6 +82,7 @@ $sites.Add("portal.azure.com")
 $sites.Add("dev.azure.com")
 $sites.Add("store.steampowered.com")
 $sites.Add("instagram.com")
+$sites.Add("console.cloud.google.com")
 
 foreach($site in $sites)
 {
