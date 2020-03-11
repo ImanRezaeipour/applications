@@ -23,3 +23,6 @@ sudo snap install -y powershell --classic
 sudo apt install -y yarn
 sudo apt install -y git
 sudo snap install -y ffmpeg
+
+##### Alias
+sudo snap alias dotnet-sdk.dotnet dotnet
