@@ -3,12 +3,16 @@ sudo apt update
 sudo apt install -y snapd
 
 ##### PUBLIC
+sudo apt install -y synaptic
 sudo apt install -y gnome-tweak-tool
 sudo apt install -y openconnect
 sudo apt install -y shotcut
 sudo apt install -y ubuntu-restricted-extras
 sudo apt install -y gnome-shell-extensions
 sudo apt install -y vlc
+sudo apt install -y libreoffice
+sudo apt install -y uget
+sudo apt install -y remmina
 
 ##### DEVELOP (Cross Platform, Open Source, CLI)
 sudo snap install -y dotnet-sdk --classic --channel=2.2/stable
