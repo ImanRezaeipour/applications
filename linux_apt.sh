@@ -2,6 +2,12 @@
 sudo apt update
 sudo apt install -y snapd
 
+wget -q https://packages.microsoft.com/config/ubuntu/19.10/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
+sudo dpkg -i packages-microsoft-prod.deb
+sudo apt-get update
+sudo apt-get install apt-transport-https
+sudo apt-get update
+
 ##### PUBLIC
 sudo apt install -y synaptic
 sudo apt install -y gnome-tweak-tool
@@ -15,7 +21,8 @@ sudo apt install -y uget
 sudo apt install -y remmina
 
 ##### DEVELOP (Cross Platform, Open Source, CLI)
-sudo snap install -y dotnet-sdk --classic --channel=2.2/stable
+sudo apt install -y dotnet-sdk-3.1
+sudo apt install -y dotnet-sdk-2.2
 sudo apt install -y nuget
 sudo snap install -y rider --classic
 sudo snap install -y azuredatastudio
