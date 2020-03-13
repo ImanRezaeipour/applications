@@ -74,6 +74,7 @@ npm install -g daterangepicker
 npm install -g mixitup
 npm install -g sweetalert2
 npm install -g highcharts
+npm install -g nswag
 
 ##### HTML Template (Admin Panel)
 Start-Process https://themeforest.net/item/avenxo-responsive-angularjs-html-admin/11660185
