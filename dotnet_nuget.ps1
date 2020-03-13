@@ -6,6 +6,7 @@ dotnet new webapi
 
 ##### EF CLI
 dotnet tool install --global dotnet-ef
+export PATH="$PATH:$HOME/.dotnet/tools/"
 dotnet ef migrations add
 dotnet ef database update
 
