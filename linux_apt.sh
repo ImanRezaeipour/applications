@@ -1,7 +1,4 @@
-##### Install Snap
-sudo apt update
-sudo apt install -y snapd
-
+##### PPA
 wget -q https://packages.microsoft.com/config/ubuntu/19.10/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
 sudo dpkg -i packages-microsoft-prod.deb
 sudo apt-get update
@@ -9,16 +6,9 @@ sudo apt-get install apt-transport-https
 sudo apt-get update
 
 ##### PUBLIC
-sudo apt install -y synaptic
 sudo apt install -y gnome-tweak-tool
 sudo apt install -y openconnect
-sudo apt install -y shotcut
-sudo apt install -y ubuntu-restricted-extras
-sudo apt install -y gnome-shell-extensions
-sudo apt install -y vlc
-sudo apt install -y libreoffice
 sudo apt install -y uget
-sudo apt install -y remmina
 
 ##### DEVELOP (Cross Platform, Open Source, CLI)
 sudo apt install -y dotnet-sdk-3.1
